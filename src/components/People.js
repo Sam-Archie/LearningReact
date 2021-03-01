@@ -3,8 +3,8 @@ let names = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz"
 
 const People = () => (
     <ul>
-        {names.map((value) => (
-           <li>{value}</li> 
+        {names.map((value, index) => (
+           <li className="list-group-item" key={index}>{value}</li> 
         ))}
     </ul>
 
