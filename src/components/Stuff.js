@@ -11,6 +11,10 @@ import Counter from "./stateComponents/Counter";
 import StepCounter from "./stateComponents/StepCounter";
 import CatchMeIfYouCan from "./stateComponents/CatchMeIfYouCan";
 import RollCall from "./stateComponents/RollCall";
+import Length from "./formComponents/Length";
+import PasswordStrength from "./formComponents/PasswordStrength";
+import List from "./formComponents/List";
+import TempConverter from "./formComponents/TempConverter";
 
 const Stuff = ( {displaySquare} ) => (
 <div className="container ">
@@ -44,6 +48,10 @@ const Stuff = ( {displaySquare} ) => (
     <RollCall 
       names = {["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"]}
     />
+    <Length/>
+    <PasswordStrength/> 
+    <List/>
+    <TempConverter/>
 </>
 </div>
 
