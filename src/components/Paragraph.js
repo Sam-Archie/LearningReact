@@ -1,6 +1,21 @@
+import { Component } from "react";
 
-const Paragraph = () => (
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quamquam tu hanc copiosiorem etiam soles dicere. Ubi ut eam caperet aut quando? Videmus igitur ut conquiescere ne infantes quidem possint. Magna laus. Bonum patria: miserum exilium. Sed tu istuc dixti bene Latine, parum plane. Duo Reges: constructio interrete. Ergo hoc quidem apparet, nos ad agendum esse natos.</p>
-)
+
+class Paragraph extends Component
+{
+    render()
+    {
+        let {content} = this.props;
+        return (
+            <p>
+                {!content ? "Hello World" : content }
+            </p>
+        )
+    }
+}
 
 export default Paragraph;
+
+// const Paragraph = ({ content }) => (
+//     <p>{!content ? "Hello World" : content }</p>
+// )

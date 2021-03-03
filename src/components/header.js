@@ -1,8 +1,23 @@
+import { Component } from "react";
 
-const Header = () => (
-    <header>
-        <h1>Hello World</h1>
-    </header>
-)
+
+    class Header extends Component
+    {
+
+        render() {
+            
+            let { children } = this.props;
+            return (
+                <header>
+                {children}
+            </header>
+            )
+        }
+    }
+
 
 export default Header;
+// const Header = ({ children }) => (
+//     <header>
+//         {children}
+//     </header>

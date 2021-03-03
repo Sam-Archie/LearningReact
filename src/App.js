@@ -1,12 +1,14 @@
 import Stuff from "./components/Stuff";
 import './App.css';
-import { createFactory } from "react";
+
 
 
 
 function App() {
   
-  return <Stuff/>
+  return <Stuff
+  displaySquare = {true}
+  />
 }
 
 export default App;
