@@ -19,7 +19,6 @@ class List extends Component
     {
         const {listItems, value} = this.state;
 
-        //if valuie is equal to "" do something about it
         this.setState({listItems : [...listItems, value], value: ""});
     }
 

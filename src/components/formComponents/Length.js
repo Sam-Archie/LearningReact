@@ -2,9 +2,9 @@ import { Component } from "react";
 
 class Length extends Component
 {
-    constructor(props)
+    constructor()
     {
-        super(props);
+        super();
         this.state = {
             value : "",
             
@@ -15,7 +15,11 @@ class Length extends Component
 
     handleChange(e) 
     {
-        this.setState({value : e.currentTarget.value})
+        const newState = {
+            value : e.currentTarget.value
+        };
+
+        this.setState(newState);
     }
 
     render()

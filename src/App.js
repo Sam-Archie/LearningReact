@@ -1,14 +1,21 @@
+import {BrowserRouter as Router, Switch} from "react-router-dom";
 import Stuff from "./components/Stuff";
 import './App.css';
 
 
 
 
-function App() {
+  const App = () => (
   
-  return <Stuff
-  displaySquare = {true}
-  />
-}
+      
+  	    <Stuff
+  	    displaySquare = {true}
+  	    />
+      
+
+  )
+  
+
+
 
 export default App;

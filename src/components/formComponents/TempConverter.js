@@ -16,14 +16,14 @@ class TempConverter extends Component
 
     handleCelsius(e)
     {
-        const {celsius} = this.state;
+
         let convertCelsius = (e.currentTarget.value * 1.8) + 32; 
         this.setState({farenheit: convertCelsius, celsius: e.currentTarget.value})
     }
 
     handleFarenheit(e)
     {
-        const {farenheit} = this.state;
+   
         let convertFarenheit = (e.currentTarget.value -32) / 1.8;
         this.setState({celsius: convertFarenheit, farenheit: e.currentTarget.value});
     }

@@ -1,9 +1,9 @@
 
 
-const Square = ({color}) => {
+const Square = ({square}) => {
     
     const divStyle = {
-        border: `1px solid ${color}`,
+        border: `1px solid ${square}`,
         height: "200px",
         width: "200px"
     }
@@ -11,6 +11,6 @@ const Square = ({color}) => {
     return <div style={divStyle}></div>
 };
 
-Square.defaultProps = {color: "red"};
+Square.defaultProps = {square: "red"};
 
 export default Square;

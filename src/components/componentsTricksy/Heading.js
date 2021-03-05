@@ -2,7 +2,7 @@
 
 const Heading = () => (
     <header class="row">
-        <h1>My App</h1>
+        <h1>A Few Bits</h1>
     </header>
 )
 
