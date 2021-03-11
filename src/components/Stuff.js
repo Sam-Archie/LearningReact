@@ -24,6 +24,18 @@ import Squared from "./formComponents/Squared";
 import Transform from "./formComponents/Transform";
 import Footer from "./Footer";
 import FourOhFour from "./FourOhFour";
+import ClickedHook from "./hooks/ClickedHook";
+import SquareHook from "./hooks/SquareHook";
+import ToggleTextHook from "./hooks/ToggleTextHook";
+import CounterHook from "./hooks/CounterHook";
+import StepCounterHook from "./hooks/StepCounterHook";
+import CatchMeHook from "./hooks/CatchMeHook";
+import RollCallHook from "./hooks/RollCallHook";
+import PasswordStrengthHook from "./hooks/PasswordStrengthHook";
+import TempConverterHook from "./hooks/TempConverterHook";
+import ListHook from "./hooks/ListHook";
+import ColoursHook from "./hooks/ColoursHook";
+import DieHook from "./hooks/DieHook";
 
 const Stuff = ( {displaySquare} ) => (
 <Router>
@@ -78,6 +90,28 @@ const Stuff = ( {displaySquare} ) => (
             <Route path="/lifecycle-components">
                 {true ? <GodCounter/> : null}
                 <TwoCounters />
+            </Route>
+
+            <Route path="/hooks">
+                <ClickedHook/>
+                <SquareHook colour="hotpink" />
+                <ToggleTextHook initial="Hello" alternate="World" />
+                <CounterHook initial={ 50 } max={ 100 } />
+                <StepCounterHook max={ 100 } step={ 5 } /> 
+                <CatchMeHook jump={ 100 }/>
+                <RollCallHook names={ ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] }/>
+                <PasswordStrengthHook />
+                <TempConverterHook />
+                <ListHook />
+                <ColoursHook
+                colours={[
+                    "#C14412",
+                    "#EBB31A",
+                    "#8F5318",
+                    "#009EAD",
+                    "#395967",
+                    ]} />
+                <DieHook sides={ 6 }/>
             </Route>
 
             <FourOhFour/>
